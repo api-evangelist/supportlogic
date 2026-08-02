@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+source: https://www.supportlogic.com/security/
+url: https://www.supportlogic.com/security/
+certifications:
+- SOC 2 Type 2
+- ISO 27001
+- HIPAA
+- GDPR
+- CCPA
+- FIPS 140-2
+program:
+  soc_reports: SOC 2 Type 2 maintained annually
+  pen_testing: Penetration testing results available upon request
+  monitoring: 24/7 NOC and SOC team monitoring; regular internal and external audits
+whitepaper: https://www.supportlogic.com/resources/whitepapers/supportlogic-security-overview/
+evidence:
+- source: https://www.supportlogic.com/security/
+  keywords:
+  - soc 2 type 2
+  - iso 27001
+  - hipaa
+  - gdpr
+  - ccpa
+  - trust

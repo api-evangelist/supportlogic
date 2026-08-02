@@ -1,8 +1,30 @@
 aid: supportlogic
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/supportlogic.png
 name: Supportlogic
-description: Supportlogic is a company surfaced as a portfolio company of general-catalyst, sierra-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  SupportLogic is an enterprise AI infrastructure company for customer experience
+  and support operations. Its Service Experience Data Cloud normalizes support
+  data across cases, chat, and voice and enriches it with AI-driven sentiment and
+  predictive signals, while ambient AI agents predict and prevent escalations,
+  detect sentiment, automate case routing, draft replies and knowledge-base
+  articles, and coach support teams. SupportLogic layers on top of existing
+  ticketing/CRM stacks (Salesforce, Zendesk, Freshdesk, ServiceNow, Jira) and
+  exposes its intelligence to AI clients through a first-party hosted MCP server
+  that works with Claude, ChatGPT, and enterprise applications. Surfaced as a
+  portfolio company of General Catalyst and Sierra Ventures and enriched by the
+  API Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/supportlogic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +35,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Customer Support
+- Customer Experience
+- Artificial Intelligence
+- Service Experience
+- Sentiment Analysis
+- Escalation Management
+- MCP
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +54,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://supportlogic.com/
+  url: https://www.supportlogic.com/
+- type: Documentation
+  url: https://www.supportlogic.com/resources/techguides/
+- type: Support
+  url: https://support.supportlogic.com/support/home
+- type: Blog
+  url: https://www.supportlogic.com/resources/blog/
+- type: Pricing
+  url: https://www.supportlogic.com/pricing/
+- type: PrivacyPolicy
+  url: https://www.supportlogic.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.supportlogic.com/master-service-agreement/
+- type: MCPServer
+  url: mcp/supportlogic-mcp.yml
+- type: Authentication
+  url: authentication/supportlogic-authentication.yml
+- type: Conformance
+  url: conformance/supportlogic-conformance.yml
+- type: Compliance
+  url: https://www.supportlogic.com/security/
+- type: TrustCenter
+  url: security/supportlogic-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/supportlogic-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.supportlogic.com/security/
+- type: DomainSecurity
+  url: security/supportlogic-domain-security.yml
+- type: LLMsTxt
+  url: llms/supportlogic-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1
