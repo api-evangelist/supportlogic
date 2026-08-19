@@ -2,15 +2,12 @@ generated: '2026-07-21'
 method: searched
 status: published
 source: https://www.supportlogic.com/platform/mcp-server/
-notes: >-
-  SupportLogic advertises a first-party hosted/remote MCP server that connects
-  its Service Experience Data Cloud to MCP clients (Claude, ChatGPT, and
-  enterprise apps). The endpoint is tenant-scoped and generated from the
-  SupportLogic Command Center (Settings -> MCP Server -> Generate Credentials).
-  At probe time (2026-07-21) the advertised host mcp.supportlogic.com did not
-  resolve publicly (NXDOMAIN) - the endpoint pattern below is taken verbatim
-  from the product page and is expected to be provisioned per tenant. The tool
-  catalog is transcribed from the product page, grouped as published; treat as a
+notes: SupportLogic advertises a first-party hosted/remote MCP server that connects its Service Experience
+  Data Cloud to MCP clients (Claude, ChatGPT, and enterprise apps). The endpoint is tenant-scoped and
+  generated from the SupportLogic Command Center (Settings -> MCP Server -> Generate Credentials). At
+  probe time (2026-07-21) the advertised host mcp.supportlogic.com did not resolve publicly (NXDOMAIN)
+  - the endpoint pattern below is taken verbatim from the product page and is expected to be provisioned
+  per tenant. The tool catalog is transcribed from the product page, grouped as published; treat as a
   documented surface rather than a live-verified manifest.
 server:
   name: supportlogic
@@ -21,39 +18,44 @@ server:
     type: bearer
     note: Bearer token generated in the SupportLogic Command Center per tenant.
 tools:
-  # Account & Customer Context
-  - name: account.health
-    group: Account & Customer Context
-  - name: account.summary
-    group: Account & Customer Context
-  - name: account.escalations
-    group: Account & Customer Context
-  - name: account.history
-    group: Account & Customer Context
-  # Case Intelligence
-  - name: case.summary
-    group: Case Intelligence
-  - name: case.signals
-    group: Case Intelligence
-  - name: case.related
-    group: Case Intelligence
-  - name: case.route
-    group: Case Intelligence
-  # Knowledge & Resolution
-  - name: knowledge.search
-    group: Knowledge & Resolution
-  - name: knowledge.answer
-    group: Knowledge & Resolution
-  - name: kb.draft
-    group: Knowledge & Resolution
-  - name: reply.draft
-    group: Knowledge & Resolution
-  # Signals & Alerts
-  - name: signal.list
-    group: Signals & Alerts
-  - name: alert.subscribe
-    group: Signals & Alerts
-  - name: trend.detect
-    group: Signals & Alerts
-  - name: voice.analyze
-    group: Signals & Alerts
+- name: account.health
+  group: Account & Customer Context
+- name: account.summary
+  group: Account & Customer Context
+- name: account.escalations
+  group: Account & Customer Context
+- name: account.history
+  group: Account & Customer Context
+- name: case.summary
+  group: Case Intelligence
+- name: case.signals
+  group: Case Intelligence
+- name: case.related
+  group: Case Intelligence
+- name: case.route
+  group: Case Intelligence
+- name: knowledge.search
+  group: Knowledge & Resolution
+- name: knowledge.answer
+  group: Knowledge & Resolution
+- name: kb.draft
+  group: Knowledge & Resolution
+- name: reply.draft
+  group: Knowledge & Resolution
+- name: signal.list
+  group: Signals & Alerts
+- name: alert.subscribe
+  group: Signals & Alerts
+- name: trend.detect
+  group: Signals & Alerts
+- name: voice.analyze
+  group: Signals & Alerts
+deployment:
+  mode: none
+  endpoint: https://mcp.supportlogic.com/v1/{tenant-id}
+  verified: probed
+  probe: dead
+  note: the endpoint this manifest claimed did not answer; recorded as none rather than deleted so the
+    claim stays auditable
+  checked: '2026-08-12'
+  source: catalog MCP census
