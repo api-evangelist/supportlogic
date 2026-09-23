@@ -1,0 +1,36 @@
+# Front Door AI Index — supportlogic — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: supportlogic
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.supportlogic.com
+  final_host: www.supportlogic.com
+  ownership: own
+  owner: supportlogic
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 86
+  host_score: 86
+  density: 47.23
+  words: 1821
+  tiers:
+    agentic: 24
+    core: 46
+    model: 16
+  ambiguous: 39
+  top_terms:
+    AI: 46
+    agent: 31
+    AI agent: 10
+    Claude: 8
+    MCP: 7
+    ChatGPT: 6
+    cognitive: 4
+    Gemini: 2
+    copilot: 2
+    predictive: 2
+    AI assistant: 1
+    agentic: 1
