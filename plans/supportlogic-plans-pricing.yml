@@ -1,0 +1,37 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.supportlogic.com/pricing/
+sources:
+- https://www.supportlogic.com/pricing/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: usage-other
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Hybrid usage-based credits plus seat-based licensing; tiers show 'Contact for Pricing' but FAQ states
+  $4,000/month starting price. Volume discounting capped at 50%.
+plan_count: 4
+currency: USD
+plans:
+- name: Elevate SX
+  price_text: Contact for Pricing
+  period: none
+- name: Core SX
+  price_text: Contact for Pricing
+  period: none
+- name: Resolve SX
+  price_text: Contact for Pricing
+  period: none
+- name: Starting price
+  price_text: Pricing starts at $4,000 per month (requires a pre-paid, annual contract)
+  price: 4000
+  currency: USD
+  period: month
+  included_quota: starting at 2.5 million credits, up to 100 million
